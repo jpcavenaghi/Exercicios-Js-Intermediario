@@ -1,0 +1,29 @@
+/* ---- VARIABLES ---- */
+
+:root{
+    /* ---- INDEX --- */
+    --color-title:#17419a;
+    --color-js-symbol: #f5da04;
+    --font-pixel: 'pixel', 'Arial Narrow', Arial, sans-serif;   
+}
+
+/* ---- HOME ---- */
+
+.fa-home {
+    position: absolute;
+    font-size: 30px;
+    right: 0;
+    color: #000;
+  }
+  
+  .fa-home:hover {
+    transition: 0.5s;
+    color: var(--color-js-symbol);
+  }
+  
+/* ---- FONT ---- */
+
+@font-face {
+    font-family: 'pixel';
+    src: url(../font/Pixellari.ttf);
+}

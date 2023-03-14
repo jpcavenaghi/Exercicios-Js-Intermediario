@@ -1,0 +1,118 @@
+/* ---- RESET ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(202, 202, 202);
+    font-family: 'Roboto', Times, serif;
+}
+
+/* ---- STYLES ---- */
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .ilustration {
+    position: absolute;
+    left: 13%;
+}
+
+.acordeon {
+    background-color: #FCFCFC;
+    width: 60%;
+    padding: 50px 70px 70px 200px;
+    border-radius: 21px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.acordeon .title {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.acordeon .acordeon-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+    padding: 15px 15px 10px 0;
+    cursor: pointer;
+}
+
+.acordeon-item .acordeon-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.acordeon-header .triangle {
+    color: #808080;
+}
+
+.acordeon-item .acordeon-content {
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: none;
+}
+
+.acordeon-item.active .acordeon-content {
+    display: block;
+}
+
+.acordeon-item.active a {
+    color: red;
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media(max-width:1100px) {
+    .container .ilustration {
+        left: 10%;
+    }
+}
+
+@media(max-width:820px) {
+    .acordeon {
+        width: 70%;
+    }
+
+    .container .ilustration {
+        left: 2%;
+    }
+}
+
+@media(max-width:620px) {
+    .container {
+        align-items: center;
+    }
+
+    .container .ilustration {
+        display: none;
+    }
+
+    .acordeon {
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+/* ---- HOME ---- */
+
+.fa-home{
+    position: absolute;
+    font-size: 30px;
+    right: 0;
+    margin: 10px;
+}
+
+.fa-home:hover{
+    transition: 0.5s;
+    color: rgba(202, 71, 23, 0.918);
+}

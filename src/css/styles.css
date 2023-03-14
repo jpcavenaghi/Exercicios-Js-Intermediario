@@ -1,0 +1,63 @@
+/* ---- RESET ---- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    background-image: url(../images/fundo-laranja.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ---- STYLES ---- */
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    font-size: 50px;
+    color: var(--color-title);
+}
+
+.title i{
+    color: var(--color-js-symbol);
+    margin-left: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttons button{
+    height: 60px;
+    width: 300px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+    background-image: url(../images/tijolo.avif);
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media(max-width:844px){
+    .title{
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+/* ---- GENERAL ---- */
+
+.title,
+.buttons button{
+    font-family: var(--font-pixel);
+}
